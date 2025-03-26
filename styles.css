@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ping {
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    padding-top: 3vw;
+}
+
+.launch{
+    font-size: 3vw;
+}
+
+.gray {
+    color: hsl(0, 0%, 59%);
+}
+
+.libre {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.libre600 {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.soon {
+    font-size: 3vw;
+    color: black;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+}
+
+.launchsoon {
+    padding-top: 2vw;
+}
+
+.mobileimage {
+    width: 8vw;
+}
+
+.Sub {
+    padding-top: 1vw;
+}
+
+.subscribe {
+    font-size: 1.3vw;
+}
+
+.inline {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vw;
+}
+
+.email, .notify {
+    flex-grow: 0; /* Prevents items from stretching */
+}
+
+.textInput {
+    border-radius: 2vw;
+    border-color: hsl(223, 100%, 88%);
+    border-width: 1px;
+    width: 30vw; /* Adjust this value as needed */
+    max-width: 350px; /* Prevents the input from becoming too wide */
+    height: 3vw;
+}
+
+button {
+    margin-left: 1vw; /* Adds space between input and button */
+    color: white;
+    background: hsl(223, 87%, 63%);
+    border-color: transparent;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 2vw;
+    font-size: 1vw;
+}
+
+.dashboard {
+    width: 30%;
+    padding-top: 5%;
+}
+
+.copyright {
+    padding-top: 2vw;
+    color: hsl(0, 0%, 59%);
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+}
+
+.copyright2 {
+    color: hsl(0, 0%, 59%);
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+}
+
+button {
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    visibility: hidden;
+    margin-top: 5px;
+}
