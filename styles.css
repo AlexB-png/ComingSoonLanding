@@ -47,7 +47,7 @@
 }
 
 .mobileimage {
-    width: 2vw;
+    width: 8vw;
 }
 
 .Sub {
@@ -109,12 +109,18 @@ button {
 .dashboard {
     width: 40%;
     padding-top: 5%;
+
+    @media only screen and (max-width: 600px) {
+        width: 90vw;
+    }
+
 }
 
 .copyright {
     padding-top: 2vw;
     color: hsl(0, 0%, 59%);
     padding-bottom: 1vw;
+    font-size: 2vw;
 }
 
 button {
