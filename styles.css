@@ -8,7 +8,7 @@
     padding-top: 3vw;
 }
 
-.launch{
+.launch {
     font-size: 3vw;
 }
 
@@ -47,11 +47,12 @@
 }
 
 .mobileimage {
-    width: 8vw;
+    width: 2vw;
 }
 
 .Sub {
     padding-top: 1vw;
+    padding-bottom: 2vw;
 }
 
 .subscribe {
@@ -60,51 +61,59 @@
 
 .inline {
     display: flex;
-    height: 100%;
+    align-items: normal;
     justify-content: center;
     align-items: center;
-    padding-top: 3vw;
+
+    @media only screen and (max-width: 600px) {
+        /* screen less that 600px */
+        height: 100%;
+        padding-top: 3vw;
+        flex-direction: column;
+    }
 }
 
-.email, .notify {
-    flex-grow: 0; /* Prevents items from stretching */
+.email,
+.notify {
+    flex-grow: 0;
+    padding-right: 1vw;
+
+    @media only screen and (max-width: 600px) {
+        padding: 2vw;
+    }
 }
 
 .textInput {
     border-radius: 2vw;
     border-color: hsl(223, 100%, 88%);
     border-width: 1px;
-    width: 30vw; /* Adjust this value as needed */
-    max-width: 350px; /* Prevents the input from becoming too wide */
     height: 3vw;
 }
 
 button {
-    margin-left: 1vw; /* Adds space between input and button */
     color: white;
     background: hsl(223, 87%, 63%);
     border-color: transparent;
     height: 3vw;
-    width: 10vw;
     border-radius: 2vw;
     font-size: 1vw;
+    width: 10vw;
+    box-shadow: 0 1px 4px 0 hsl(223, 87%, 63%);
+
+    @media only screen and (max-width: 600px) {
+        width: 50vw;
+        border-radius: 4vw;
+    }
 }
 
 .dashboard {
-    width: 30%;
+    width: 40%;
     padding-top: 5%;
 }
 
 .copyright {
     padding-top: 2vw;
     color: hsl(0, 0%, 59%);
-    font-size: 1.5vw;
-    padding-bottom: 1vw;
-}
-
-.copyright2 {
-    color: hsl(0, 0%, 59%);
-    font-size: 1.5vw;
     padding-bottom: 1vw;
 }
 
@@ -117,4 +126,26 @@ button {
     font-size: 0.9rem;
     visibility: hidden;
     margin-top: 5px;
+}
+
+.emailinput {
+    width: 25vw;
+
+    @media only screen and (max-width: 600px) {
+        width: 75vw;
+        padding: none;
+        border-radius: 4vw;
+        font-size: 3vw;
+    }
+}
+
+.buttoninput {
+    width: 12vw;
+
+    @media only screen and (max-width: 600px) {
+        width: 80vw;
+        padding: none;
+        height: 7vw;
+        font-size: 2vw;
+    }
 }
